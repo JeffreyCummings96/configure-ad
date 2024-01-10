@@ -22,7 +22,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Create a Domain Controller VM (Windows Server 2022) Named "DC1"     
 - Create Client VM Named Client 1 on Windows 10 
-- Step 3
+- Set Domain Controller's NIC Private IP to static.
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
@@ -46,10 +46,20 @@ Create two virtual CPU's if using one it will be pretty slow.
 <img src=https://i.imgur.com/frhWExA.png/>
 </p>
 <p>
-The steps for creating the Client will be similar to creating our domain controller make sure the resource group is the same as the one you created with ur DM for the example it is "AD"
+The steps for creating the Client will be similar to creating our domain controller make sure the resource group is the same as the one you created with ur DC for the example it is "AD"
 </p>
 <br />
-<P></P> img src="https://i.imgur.com/IZp9VJs.png"</P>
+<img src=https://i.imgur.com/IZp9VJs.png>
+
 <p>
-Go under the networking tab and make sure DC1-Vnet is selected under virtual networking.
+Go under the networking tab and make sure DC1-Vnet is selected under virtual network.
+</p>
+<p> <img src=https://i.imgur.com/JIwNudl.png</p>
+<p>
+Next go to Virtual Machines on Azure and click DC1
+<p>
+  <br />
+  <p> <img src=https://i.imgur.com/pdAHG3J.png</p>
+  settings -> networking -> Click on the Network Interface (NIC) -> IP configurations -> click Ipconfig1 ->set the IP from dynamic to static that way the IP will not change if the computer is turned off. 
+</p>
 </p>

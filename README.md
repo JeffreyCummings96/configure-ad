@@ -21,7 +21,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Create a Domain Controller VM (Windows Server 2022) Named "DC1"     
-- Step 2
+- Create Client VM Named Client 1 on Windows 10 
 - Step 3
 - Step 4
 
@@ -43,9 +43,13 @@ Create two virtual CPU's if using one it will be pretty slow.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/frhWExA.png/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The steps for creating the Client will be similar to creating our domain controller make sure the resource group is the same as the one you created with ur DM for the example it is "AD"
 </p>
 <br />
+<P></P> img src="https://i.imgur.com/IZp9VJs.png"</P>
+<p>
+Go under the networking tab and make sure DC1-Vnet is selected under virtual networking.
+</p>
